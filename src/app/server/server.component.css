@@ -1,4 +1,7 @@
-section {
-    background-color: midnightblue;
-    color: aliceblue;
+/* app-servers säännöt */
+.app-server {
+    background-color: blue;
+}
+.app-server * {
+    color: bisque;
 }

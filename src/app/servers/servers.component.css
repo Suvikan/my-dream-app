@@ -1,0 +1,7 @@
+/* app-servers säännöt */
+.app-servers {
+    background-color: black;
+}
+.app-servers * {
+    color: bisque;
+}
