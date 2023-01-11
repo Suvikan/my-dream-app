@@ -1,6 +1,6 @@
 /* app-servers säännöt */
 .app-server {
-    background-color: blue;
+    background-color: rgb(63, 63, 218);;
 }
 .app-server * {
     color: bisque;

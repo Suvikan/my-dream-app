@@ -5,3 +5,9 @@
 .app-servers * {
     color: bisque;
 }
+
+.btn-primary {
+    background-color: blue;
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
