@@ -2,12 +2,17 @@
 .app-servers {
     background-color: black;
 }
-.app-servers * {
+.app-servers {
     color: bisque;
 }
 
 .btn-primary {
     background-color: blue;
+    color: white;
     padding: 0.7rem;
     border-radius: 1rem;
+}
+
+.form-control {
+    color: black;
 }
