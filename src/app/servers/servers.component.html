@@ -1,18 +1,25 @@
 <section class="app-servers">
     <!--<h1>Hi! I'm in the ServerS Componenet!</h1>
     <p>Below this I have Server Componenets</p>-->
-    <label>Server name is {{ serverName }}</label>
+    <label>Server Name</label>
     <p></p>
-    <input  type="text"
+    <!--<input  type="text"
             placeholder="give server a name"
             class="form-control"
             (input)="onUpdateServerName($event)">
+    <hr>-->
+
+    <input  type="text"
+            placeholder="give server a name"
+            class="form-control"
+            [(ngModel)]="serverName">        
     <p></p>
     <button
     class="btn btn-primary" 
     [disabled] = "!allowNewServer"  
     (click)="onCreateServer()">Add Server</button>
-    <p></p>
+    <hr>
+    <!-- <p>{{ serverName }}</p> -->
     <p>{{ serverCreationStatus }}</p> <!-- string interpolation -->
     <!-- <p [innerHTML] = "allowNewServer"> tämä sen sijan ei näy selaimessa</p>  property binding - muuttujan allowNewServer arvo haetaan html-elementin p sisällöksi siksi p:n sisälle ei voi listätä muuta sisältöä täältä käsin-->
     <app-server></app-server>
