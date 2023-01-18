@@ -24,8 +24,13 @@
     <!-- <p [innerHTML] = "allowNewServer"> tämä sen sijan ei näy selaimessa</p>  property binding - muuttujan allowNewServer arvo haetaan html-elementin p sisällöksi siksi p:n sisälle ei voi listätä muuta sisältöä täältä käsin-->
 
     <p *ngIf="serverCreated">Server was created! Server name is {{ serverName }} </p>
+    <!--
+         <p *ngIf="serverCreated; else noServer">Server was created! Server name is {{ serverName }} </p>
+    <ng-template #noServer>
+        <p>No Server was created!</p>
+    </ng-template> -->
 
-    <app-server></app-server>
+    <app-server *ngFor="let server of servers"></app-server>
     
     <!--
         <app-server></app-server>
