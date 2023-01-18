@@ -20,8 +20,11 @@
     (click)="onCreateServer()">Add Server</button>
     <hr>
     <!-- <p>{{ serverName }}</p> -->
-    <p>{{ serverCreationStatus }}</p> <!-- string interpolation -->
+    <!-- <p>{{ serverCreationStatus }}</p>  string interpolation -->
     <!-- <p [innerHTML] = "allowNewServer"> tämä sen sijan ei näy selaimessa</p>  property binding - muuttujan allowNewServer arvo haetaan html-elementin p sisällöksi siksi p:n sisälle ei voi listätä muuta sisältöä täältä käsin-->
+
+    <p *ngIf="serverCreated">Server was created! Server name is {{ serverName }} </p>
+
     <app-server></app-server>
     
     <!--
